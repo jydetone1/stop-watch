@@ -1,0 +1,30 @@
+.btn__group {
+  button {
+    background-color: rgb(78, 139, 78);
+    color: #ffffff;
+    padding: 0.7rem;
+    width: 100px;
+    margin: 0 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    &:hover {
+      background-color: rgb(61, 87, 61);
+    }
+  }
+  .reset:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 378px) {
+  .btn__group {
+    button {
+      width: 80px;
+    }
+  }
+}
